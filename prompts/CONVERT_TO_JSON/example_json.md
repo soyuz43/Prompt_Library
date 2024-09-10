@@ -1,0 +1,4 @@
+# Example JSON
+
+## Template
+Type: CREATE INTERNAL DOCUMENTATION

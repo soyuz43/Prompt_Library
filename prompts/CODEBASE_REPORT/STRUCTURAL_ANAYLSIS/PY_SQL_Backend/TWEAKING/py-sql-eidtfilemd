@@ -1,0 +1,186 @@
+------
+{TRANSITION=TRUE}
+------
+
+# SQL and Python Analysis
+
+## TASK:
+Model::Analyze the provided SQL and Python API layer codebase thoroughly, breaking down each script or function in natural language to elucidate its role and contribution to the application's overall functionality. This analysis should separate the python and SQL operations then manually document and then report your findings following all standards required for thorough and professional documentation. The overarching goal for the final report is to manually document both the grand picture and minute details to the user. The analysis and resulting final report should use the following templates below::
+
+**Expertise Level:** Intermediate (with potential for advanced skills)
+
+**Summary:**
+Provide a brief overview of the analysis and findings, including:
+
+* SQL database structure and relationships
+* Python API layer architecture and functionality
+* Key findings and recommendations
+
+**Breakdown:**
+
+* **SQL Analysis**
+	+ **Table Analysis**
+		- **Template:** SQL Table Analysis
+		- **Tasks:** Analyze table structure, identify relationships, document findings
+	+ **View Analysis**
+		- **Template:** SQL View Analysis
+		- **Tasks:** Analyze view definition, identify dependencies, document findings
+	+ **Relationship Analysis**
+		- **Template:** SQL Relationship Analysis
+		- **Tasks:** Identify table relationships, document foreign keys, analyze data flow
+* **Python API Layer Analysis**
+	+ **Module Analysis**
+		- **Template:** Python Module Analysis
+		- **Tasks:** Analyze module structure, identify functions and classes, document findings
+	+ **Function Analysis**
+		- **Template:** Python Function Analysis
+		- **Tasks:** Analyze function definition, identify parameters and returns, document findings
+	+ **Class Analysis**
+		- **Template:** Python Class Analysis
+		- **Tasks:** Analyze class structure, identify methods and attributes, document findings
+* **Documentation**
+	+ **SQL Database Documentation**
+		- **Template:** SQL Database Documentation
+		- **Tasks:** Document database structure, tables, views, relationships
+	+ **Python API Layer Documentation**
+		- **Template:** Python API Layer Documentation
+		- **Tasks:** Document module structure, functions, classes, and relationships
+
+**Examples for Ambiguous Sections:**
+
+* **Hierarchy of Functions**
+	+ Example 1: Simple Calculator Application
+		- Input: `add(2, 3)`
+		- Processing: `add` function calls `calculate` function
+		- Output: `5`
+	+ Example 2: Complex Software Application
+		- Input: `login(username, password)`
+		- Processing: `login` function calls `authenticate` function, which calls `database` function
+		- Output: `success` or `failure`
+
+{**FOR THE SQL FILE(S) USE THE FOLLOWING TEMPLATE::**}
+---
+
+    ## SQL Database Analysis and Documentation
+    ### Scope
+    {Language: SQL}
+    {SCOPE: FUNCTION/MODULE}
+
+    ###  SQL Database Explanation
+    #### Tables
+    - **Table Name**: {name}
+        - **Columns**: [{column_name: data_type}]
+        - **Relationships**: {relationships}
+
+    #### Views
+    - **View Name**: {name}
+        - **Query**: {query}
+
+    ### SQL Conventions and Best Practices
+    {CONVENTIONS}
+
+    ###  SQL Database Observations and Recommendations
+    Categories: {CATEGORIES: [, , ]}
+    Priorities: {PRIORITIES: [, , ]}
+
+<|END SQL TEMPLATE|>
+
+{**FOR THE PYTHON FILE(S) USE THE FOLLOWING TEMPLATE::**}
+---
+    ## Python API Layer Analysis and Documentation
+
+    ### Scope
+    {LANGUAGE: PYTHON}
+    {SCOPE: FUNCTION/MODULE}
+
+    ### Python API Layer Categorization and Deconstruction:  
+    - **Modules/Scripts**:
+        {MODULES: [
+        {name: "", functions: [], imports: []},
+        {name: "", functions: [], imports: []},
+        ]}
+
+    - **Functions**:
+        {FUNCTIONS: [
+        {name: "", parameters: [], returns: []},
+        {name: "", parameters: [], returns: []},
+        ]}
+
+    - **Classes**:
+        {CLASSES: [
+        {name: "", methods: [], attributes: []},
+        {name: "", methods: [], attributes: []},
+        ]}
+
+    ### Python Conventions and Best Practices
+    {CONVENTIONS}
+
+    ### Hierarchy of Functions
+    {HIERARCHY}
+
+    ### Natural Language Breakdown
+    {NATURAL LANGUAGE BREAKDOWN}
+
+
+    ## **Python Observations and Recommendations**
+    Categories: {CATEGORIES: [, , ]}
+    Priorities: {PRIORITIES: [, , ]}
+---
+<|END PYTHON TEMPLATE|>
+
+
+Your final report will provide a Pedagogical analysis of the SQL database and Python API layer, including module level explanations, a hierarchy of functions, and overall adherence to standards & conventions system architecture. The documentation is written in clear and technically specific terms, with a focus on educating and informing the reader.
+OUTPUT PARAMETERS::
+> Headers:: true
+> Introductory text:: NO_INTRO=true
+> Numbered lists:: true
+> Bullet points:: false
+> Emphasis:: bold
+> Hide empty::true
+> Output format:: RAW_MARKDOWN
+> Verbose:: true
+> Length:: long
+
+
+
+----
+### Output Parameters
+
+* **Headers**: `true`
+* **Introductory text**: `NO_INTRO=true`
+* **Numbered lists**: `true`
+* **Bullet points**: `false`
+* **Emphasis**: `bold`
+* **Hide empty**: `true`
+* **Output format**: `RAW_MARKDOWN`
+* **Verbose**: `true`
+* **Length**: `full`
+* **Include code snippets**: `true`
+* **Include visual diagrams**: `true`
+* **Organize with headings**: `true`
+* **Use clear and concise language**: `true`
+* **Use proper grammar and spelling**: `true`
+* **Use consistent formatting**: `true`
+
+--
+
+
+{
+  "output": {
+    "headers": true,
+    "introductory_text": "NO_INTRO=true",
+    "numbered_lists": true,
+    "bullet_points": false,
+    "emphasis": "bold",
+    "hide_empty": true,
+    "output_format": "RAW_MARKDOWN",
+    "verbose": true,
+    "length": "full",
+    "include_code_snippets": true,
+    "include_visual_diagrams": true,
+    "organize_with_headings": true,
+    "use_clear_and_concise_language": true,
+    "use_proper_grammar_and_spelling": true,
+    "use_consistent_formatting": true
+  }
+}

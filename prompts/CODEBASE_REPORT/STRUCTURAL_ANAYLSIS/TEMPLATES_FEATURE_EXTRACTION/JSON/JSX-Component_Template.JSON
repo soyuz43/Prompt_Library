@@ -1,0 +1,62 @@
+{
+    "Component": {
+        "NAME": "MyApp",
+        "PROPS": [
+            {
+                "NAME": "title",
+                "TYPE": "string",
+                "DESCRIPTION": "Title of the app"
+            }
+        ],
+        "STATE": [
+            {
+                "NAME": "count",
+                "TYPE": "int",
+                "DESCRIPTION": "Current count"
+            }
+        ],
+        "METHODS": [
+            {
+                "NAME": "handleButtonClick",
+                "PARAMETERS": [],
+                "RETURNS": "void"
+            },
+            {
+                "NAME": "handleInputChange",
+                "PARAMETERS": [
+                    "event"
+                ],
+                "RETURNS": "void"
+            }
+        ],
+        "RENDER": {
+            "TYPE": "div",
+            "CHILDREN": [
+                {
+                    "TYPE": "h1",
+                    "CHILDREN": [
+                        "{title}"
+                    ]
+                },
+                {
+                    "TYPE": "p",
+                    "CHILDREN": [
+                        "Count: {count}"
+                    ]
+                },
+                {
+                    "TYPE": "button",
+                    "CHILDREN": [
+                        "Increment"
+                    ],
+                    "ONCLICK": "handleButtonClick"
+                },
+                {
+                    "TYPE": "input",
+                    "TYPE2": "text",
+                    "ONCHANGE": "handleInputChange"
+                }
+            ]
+        }
+    }
+}

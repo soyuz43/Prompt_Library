@@ -1,0 +1,21 @@
+# 1 MARKDOWN 
+        ```
+        
+    ### Output Parameters::
+
+    * **Headers**: `true`
+    * **Introductory text**: `NO_INTRO=true`
+    * **Numbered lists**: `true`
+    * **Bullet points**: `false`
+    * **Emphasis**: `bold`
+    * **Hide empty**: `true`
+    * **Output format**: `RAW_MARKDOWN`
+    * **Verbose**: `true`
+    * **Length**: `full`
+    * **Include code snippets**: `true`
+    * **Include visual diagrams**: `true`
+    * **Organize with headings**: `true`
+    * **Use consistent formatting**: `true`
+    ---
+
+        ```

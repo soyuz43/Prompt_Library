@@ -1,0 +1,4 @@
+# Example README
+
+## Template
+Type: CREATE INTERNAL DOCUMENTATION

@@ -1,0 +1,26 @@
+{
+    "output": "RAW_MARKDOWN",
+    "headers": true,
+    "intro": "NO_INTRO=true",
+    "tables": "MARKDOWN",
+    "code_blocks": {
+        "language": "python",
+        "highlight": true
+    },
+    "list_items": "numbered",
+    "numbered_lists": true,
+    "bullet_points": true,
+    "emphasis": "bold",
+    "hide_empty": true,
+    "include_default": true,
+    "show_examples": true,
+    "header_level": 1,
+    "indent": "spaces",
+    "indent_size": 4,
+    "newline": "windows",
+    "quiet": true,
+    "verbose": true,
+    "version": true,
+    "parameter_info": true,
+    "parameter_description": true
+}

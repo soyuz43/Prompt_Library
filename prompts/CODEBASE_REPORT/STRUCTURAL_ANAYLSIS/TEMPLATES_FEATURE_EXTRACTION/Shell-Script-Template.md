@@ -1,0 +1,49 @@
+<BEGIN SHELL_TEMPLATE>
+Script:: 
+{
+  NAME: my_script,
+  COMMANDS: [
+    {COMMAND: echo, ARGS: ["Hello, world!"]},
+    {COMMAND: mkdir, ARGS: ["my_dir"]},
+    {COMMAND: cd, ARGS: ["my_dir"]},
+    {COMMAND: touch, ARGS: ["file1.txt", "file2.txt"]},
+    {COMMAND: ls, ARGS: []}
+  ]
+}
+</END SHELL_TEMPLATE>
+
+---
+
+<BEGIN SHELL_TEMPLATE>
+Script:: 
+{
+  NAME: my_script,
+  FUNCTIONS: [
+    {
+      NAME: create_dir,
+      COMMANDS: [
+        {COMMAND: mkdir, ARGS: ["my_dir"]},
+        {COMMAND: cd, ARGS: ["my_dir"]}
+      ]
+    },
+    {
+      NAME: create_files,
+      COMMANDS: [
+        {COMMAND: touch, ARGS: ["file1.txt", "file2.txt"]}
+      ]
+    },
+    {
+      NAME: list_files,
+      COMMANDS: [
+        {COMMAND: ls, ARGS: []}
+      ]
+    },
+    {
+      NAME: greeting,
+      COMMANDS: [
+        {COMMAND: echo, ARGS: ["Hello, world!"]}
+      ]
+    }
+  ]
+}
+</END SHELL_TEMPLATE>
